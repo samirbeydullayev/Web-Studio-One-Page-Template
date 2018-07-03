@@ -1,0 +1,43 @@
+#serviceInfo{
+    background-color: #222222;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .col-md-4{
+        margin-bottom: 4%;
+    }
+    
+
+    .info{
+        font-family: 'Opensans', sans-serif;
+        position: relative;
+        i{
+            font-size: 45px;
+            color: #B46E3C;
+            position: absolute;
+            top: 11%;
+            cursor: pointer;
+        }
+        a{
+            margin-left: 17%;
+            display:block;
+            font-size: 17px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            &:hover{
+                color: #B46E3C;
+            }
+        }
+        p{
+            margin-left: 17%;
+            color: #7E7E7E;
+            font-size: 14px;
+            margin-top: 8%;
+            margin-bottom: 0;
+
+        }
+
+    }
+}

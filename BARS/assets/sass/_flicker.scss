@@ -1,0 +1,162 @@
+#flicker{
+    padding-top: 7%;
+    padding-bottom: 3%;
+    background-color: #272727;
+    .clients{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+        .contentHeader{
+            h1{
+                font-size: 2.6ch;
+                color: white;
+            }
+        }
+        .hr{
+            position: relative;
+            margin-top: 6%;
+            height: 45px;
+            line-height: 45px;
+            hr{
+                width: 20%;
+                background-color: #895B38;
+            }
+            .square{
+                position: absolute;
+                left: 49%;
+                width: 2%;
+                bottom: 87%;
+                height: 11px;
+                transform: rotate(48deg);
+                background-color: #895B38;
+            }
+        }
+    }
+    ul{
+        margin-top: 5%;
+        li{
+            display: inline-block;
+            width: 12.1%;
+            height: 120px;;
+            position: relative;
+            a{
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                position: absolute;
+                transition:all 0.3s ease;
+                &:hover{
+                    background: rgba(0,0,0,0.3)
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;;
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    #flicker{
+        .container{
+            .clients{
+                width: 100%;
+                .contentHeader{
+                    h1{
+                        font-size: 2ch;
+                    }
+                }
+                .hr{
+                    margin-top: 9%;
+                    hr{
+                        width: 50%;
+                    }
+                    .square{
+                        height: 12px;
+                        width: 4.3%;
+                    }
+                }
+            }
+            ul{
+                margin-left: -10%;
+                li{
+                    width: 11%;
+                    height: 50px;
+                }
+            }
+        }
+    }
+  }
+  @media  screen and (min-width: 360px) and (max-width: 767px){
+    #flicker{
+        .container{
+            .clients{
+                .hr{
+                    .square{
+                        height: 13px;
+                    }
+                }
+            }
+        }
+    }
+  }
+  @media  screen and (min-width: 375px) and (max-width: 1200px){
+    #flicker{
+        .container{
+            .clients{
+                .hr{
+                    .square{
+                        height: 14px;
+                    }
+                }
+            }
+        }
+    }
+  }
+  @media  screen and (min-width: 768px) and (max-width: 1023px){
+    #flicker{
+        .container{
+            .clients{
+                width: 100%;
+                .contentHeader{
+                    h1{
+                        font-size: 3ch;
+                    }
+                }
+                .hr{
+                    margin-top: 9%;
+                    hr{
+                        width: 50%;
+                    }
+                    .square{
+                        width: 3%;
+                        bottom: 78%;
+                        height: 22px;
+                    }
+                }
+            }
+            ul{
+                li{
+                    width: 11%;
+                    height: 85px;
+                }
+            }
+        }
+    }
+  }
+  @media  screen and (min-width: 1024px) and (max-width: 1200px){
+    #flicker{
+        .container{
+            .clients{
+                width: 75%;
+            }
+            ul{
+                li{
+                    width: 11.5%;
+                }
+            }
+        }
+    }
+  }

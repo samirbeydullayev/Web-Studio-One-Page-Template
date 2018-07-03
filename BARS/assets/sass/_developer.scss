@@ -1,0 +1,209 @@
+#developer{
+    background-color: #272727;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .container{
+        .row{
+            .col-md-12{
+                .clients{
+                    text-align: center;
+                    width: 50%;
+                    margin: 0 auto;
+                    font-family: 'Open Sans', sans-serif;
+                    .contentHeader{
+                        h1{
+                            font-size: 2.6ch;
+                            color: white;
+                        }
+                    }
+                    .hr{
+                        position: relative;
+                        margin-top: 6%;
+                        height: 45px;
+                        line-height: 45px;
+                        hr{
+                            width: 20%;
+                            background-color: #895B38;
+                        }
+                        .square{
+                            position: absolute;
+                            left: 49%;
+                            width: 2%;
+                            bottom: 86%;
+                            height: 12px;
+                            transform: rotate(52deg);
+                            background-color: #895B38;
+                        }
+                    }
+                }
+            }
+            .col-md-3{
+                .main{
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 256px;
+                    }
+                    .contact{
+                        transition: all 0.2s ease-in;
+                        width: 100%;
+                        position: absolute;
+                        top: 51%;
+                        left: -11%;
+                        opacity: 0;
+                        ul{
+                            text-align: center;
+                            li{
+                                display: inline-block;
+                                margin-left: 10%;
+                                font-size: 1.8ch;
+                                background-color: #222222da;
+                                padding: 1%;
+                                padding-left: 3%;
+                                padding-right: 3%;
+                                cursor: pointer;
+                                a{
+                                    i{
+                                        transition: all 0.2s ease-in;
+                                        color: rgba(138, 140, 143, 0.9);
+                                    }
+                                }
+                                &:hover a i{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    .secondDeveloper{
+                        left: -13;
+                    }
+                    .content{
+                        padding: 8% 4%;
+                        background-color: #181818;
+                        border-bottom: 1px solid #8A8C8F;
+                        transition: all 0.2s ease-in;
+                        h3{
+                            color: white;
+                        }
+                        p{
+                            color: #8A8C8F;
+                        }
+                    }
+                    &:hover .content{
+                        background-color: rgb(163, 102, 55);
+                        border-bottom: 0.5px solid #181818;
+                    }
+                    &:hover .contact{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    #developer{
+        .container{
+            .row{
+                .col-md-12{
+                    .clients{
+                        width: 100%;
+                        .contentHeader{
+                            h1{
+                                font-size: 2ch;
+                            }
+                        }
+                        .hr{
+                            margin-top: 9%;
+                            hr{
+                                width: 50%;
+                            }
+                            .square{
+                                width: 4.3%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+  @media  screen and (min-width: 411px) and (max-width: 767px){
+    #developer{
+        .container{
+            .row{
+                .col-md-12{
+                    .clients{
+                        .hr{
+                            .square{
+                                height: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+  @media  screen and (min-width: 768px) and (max-width: 1023px){
+    #developer{
+        .container{
+            .row{
+                .col-md-12{
+                    .clients{
+                        width: 100%;
+                        .contentHeader{
+                            h1{
+                                font-size: 3ch;
+                            }
+                        }
+                        .hr{
+                            margin-top: 9%;
+                            hr{
+                                width: 50%;
+                            }
+                            .square{
+                                width: 3%;
+                                bottom: 78%;
+                                height: 22px;
+                            }
+                        }
+                    }
+                }
+                .col-md-3{
+                    .main{
+                        img{
+                            height: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+  @media  screen and (min-width: 1024px) and (max-width: 1200px){
+    #developer{
+        .container{
+            .row{
+                .col-md-12{
+                    .clients{
+                        width: 75%;
+                    }
+                }
+                .col-md-3{
+                    .main{
+                        img{
+                            height: 200px;
+                        }
+                        .content{
+                            h3{
+                                font-size: 3.3ch;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }

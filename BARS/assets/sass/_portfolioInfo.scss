@@ -1,0 +1,263 @@
+#portfolioInfo{
+    background-color: #222222;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    .head{
+        .col-md-3{
+            padding: 40px;
+            text-align: center;
+            border-left: 1px solid rgba(255,255,255,0.5);
+            background-color: #141414;
+            &:nth-child(4){
+                border-right: 1px solid rgba(255,255,255,0.5);
+            }
+            a{
+                text-decoration: none;
+                display: block;
+            }
+            i{
+                font-size: 55px;
+                color: rgba(180, 110, 60, 0.5);
+            }
+            h3{
+            color:white;
+            text-transform: uppercase;
+            font-size: 17px;
+            color: rgba(255,255,255,0.5);
+            margin-top: 15%;
+
+            }
+            &:hover{
+                i{
+                    color: rgba(180, 110, 60, 1)
+                }
+                h3{
+                    color: rgba(255,255,255,1);
+                }
+            }
+        }
+    }
+    .graphic{
+        padding-top: 4%;
+        animation-name: anime;
+        animation-duration: 1s;
+        .col-md-4{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            a{
+                transition: all 0.3s ease;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                span.line{
+                    height: 0%;
+                    width: 10px;
+                    transition: all 0.5s linear;
+                    position:absolute;
+                    left: 0;
+                    bottom: 0;
+                   background-color: #B46E3C;
+                    }
+                    span.word{
+                     position: absolute;
+                     left: 50%;
+                     top: 50%;
+                     transform: translate(-50%,-50%);
+                     color: white;
+                     text-align: center;
+                     opacity: 0;;
+              
+                     h3{
+                        color:white;
+                        text-transform: uppercase;
+                        font-size: 17px;
+                     }
+                     p{
+                        color: #7E7E7E;
+                        font-size: 15px;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                     }
+                       
+                    }
+            }
+            &:hover{
+                a{
+                    background-color: rgba(31, 29, 29, 0.8); 
+                    span.word{
+                        opacity: 1;
+                    }
+                    span.line{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .photography{
+        padding-top: 4%;
+        animation-name: anime;
+        animation-duration: 1s;
+        display: none;
+        .col-md-4{
+            height: 350px;
+            margin-bottom: 4%;
+            a{
+                transition: all 0.3s ease;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                span.line{
+                    height: 0%;
+                    width: 10px;
+                    transition: all 0.5s linear;
+                    position:absolute;
+                    left: 0;
+                    bottom: 0;
+                   background-color: #B46E3C;
+                    }
+                    span.word{
+                     position: absolute;
+                     left: 50%;
+                     top: 50%;
+                     transform: translate(-50%,-50%);
+                     color: white;
+                     text-align: center;
+                     opacity: 0;;
+                     h3{
+                        color:white;
+                        text-transform: uppercase;
+                        font-size: 17px;
+                     }
+                     p{
+                        color: #7E7E7E;
+                        font-size: 15px;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                     }
+                       
+                    }
+            }
+            .img{
+                height: 100%;;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                &:hover{
+                    a{
+                        background-color: rgba(31, 29, 29, 0.85); 
+                        span.word{
+                            opacity: 1;
+                        }
+                        span.line{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .video{
+        padding-top: 4%;
+        animation-name: anime;
+        animation-duration: 1s;
+        display: none;
+        .col-md-12{
+            padding: 0;
+            span{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(31, 29, 29, 0.5);
+            }
+        }
+        video{
+            width: 100%;
+        }
+    }
+    .document{
+        animation-name: anime;
+        animation-duration: 1s;
+     padding-top: 4%;
+     text-align: center;
+     display: none;
+     .head{
+         h3{
+            color:white;
+            font-size: 30px;
+            font-family: 'JosefinSans', sans-serif;
+            letter-spacing: 0.05cm;
+            span{
+                color: #B46E3C;
+            }
+         }
+     }
+     .content{
+         padding-top: 4%;
+         p{
+            color: #7E7E7E;
+            font-size: 15px;
+         }
+     }
+     .foot{
+         padding-top: 4%;
+         button{
+             padding: 10px 15px;
+             background-color:transparent;
+             border:1px solid #B46E3C;
+             color: #B46E3C;
+             transition: all 0.3s ease;
+             cursor: pointer;
+             font-size: 12px;
+             &:hover{
+                 background-color: #B46E3C;
+                 color: white;
+             }
+         }
+     }
+    }
+}
+
+
+.aktiv{
+    background: #222222 !important;
+    i{
+        color: rgba(180, 110, 60, 1) !important;
+    }
+    h3{
+        color: rgba(255,255,255,1)  !important;
+    }
+}
+@keyframes anime{
+    0%{
+        opacity: 0;
+        transform: translate3d(0,-5%,0);
+        z-index: -1;
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0,0)
+
+    }
+}
+
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    #portfolioInfo{
+        .graphic{
+            .col-md-4{
+               a {
+                width: 90%;
+               }
+            }
+        }  
+    }
+  }
+

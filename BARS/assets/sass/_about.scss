@@ -1,0 +1,46 @@
+#about{
+    .container-fluid{
+        .row{
+            .col-md-12{
+                padding: 0;
+                .about{
+                    font-family: 'Open Sans', sans-serif;
+                    text-align: center;
+                    padding-top: 5%;
+                    padding-bottom: 5%;
+                    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../image/about/about.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    h1{
+                        color: white;
+                        font-size: 7ch;
+                    }
+                    p{
+                        padding-top: 2%;
+                        color: #8A8C8F;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    #about{
+        .container-fluid{
+            .row{
+                .col-md-12{
+                    .about{
+                        h1{
+                            font-size: 3ch;
+                        }
+                        p{
+                            font-size: 1.1ch;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }

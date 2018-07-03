@@ -1,0 +1,161 @@
+#clients{
+    background-color: #222222;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .container-fluid{
+        .row{
+            .col-md-12{
+                .clients{
+                    text-align: center;
+                    width: 50%;
+                    margin: 0 auto;
+                    font-family: 'Open Sans', sans-serif;
+                    .contentHeader{
+                        h1{
+                            font-size: 2.6ch;
+                            color: white;
+                        }
+                    }
+                    .hr{
+                        position: relative;
+                        margin-top: 6%;
+                        height: 45px;
+                        line-height: 45px;
+                        hr{
+                            width: 20%;
+                            background-color: #895B38;
+                        }
+                        .square{
+                            position: absolute;
+                            left: 49%;
+                            width: 2%;
+                            bottom: 80%;
+                            height: 16px;
+                            transform: rotate(48deg);
+                            background-color: #895B38;
+                        }
+                    }
+                    .contentEnd{
+                        margin: 0 auto;
+                        width: 80%;
+                        p{
+                            font-size: 1.3ch;
+                            color: #8A8C8F;
+                        }
+                    }
+                    .button{
+                        padding-top: 5%;
+                        a{
+                            text-decoration: none;
+                            input{
+                                border: 1px solid #8A8C8F;
+                                padding: 1.5% 0.3%;
+                                background-color: transparent;
+                                font-family: 'Source Serif Pro', serif;
+                                font-weight: 500;
+                                transition: all ease-in 0.2s;
+                                color: #8A8C8F;
+                                &:hover{
+                                    background-color: #895B38;
+                                    border-color: #895B38;
+                                    color: white;
+                                }
+                            }
+                        }
+                        .buy{
+                            margin-left: 1%;
+                            input{
+                                border-color: #895B38;
+                                color: #895B38;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    #clients{
+        .container-fluid{
+            .row{
+                .col-md-12{
+                    .clients{
+                        width: 100%;
+                        .contentHeader{
+                            h1{
+                                font-size: 2ch;
+                            }
+                        }
+                        .hr{
+                            margin-top: 9%;
+                            hr{
+                                width: 50%;
+                            }
+                            .square{
+                                width: 4.3%;
+                            }
+                        }
+                        .button{
+                            a{
+                                input{
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+  @media  screen and (min-width: 768px) and (max-width: 1023px){
+    #clients{
+        .container-fluid{
+            .row{
+                .col-md-12{
+                    .clients{
+                        width: 100%;
+                        .contentHeader{
+                            h1{
+                                font-size: 3ch;
+                            }
+                        }
+                        .hr{
+                            margin-top: 9%;
+                            hr{
+                                width: 50%;
+                            }
+                            .square{
+                                width: 3%;
+                                bottom: 78%;
+                                height: 22px;
+                            }
+                        }
+                        .button{
+                            a{
+                                input{
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+  @media  screen and (min-width: 1024px) and (max-width: 1200px){
+    #clients{
+        .container-fluid{
+            .row{
+                .col-md-12{
+                    .clients{
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+  }
